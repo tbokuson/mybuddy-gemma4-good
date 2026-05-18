@@ -1,0 +1,53 @@
+# Xcode
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+xcuserdata/
+
+# Xcode shared data (comment out if sharing schemes)
+# *.xcodeproj/project.xcworkspace/xcshareddata/
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Model files (too large for GitHub)
+*.gguf
+.model-chunks/
+
+# Vendored llama.cpp runtime is intentionally tracked in the public submission.
+!Vendor/
+
+# project.pbxproj のローカルバックアップ
+*.pbxproj.bak-*
+
+# nanobanana 等で生成したバディの素材画像（加工前の生データ）
+BuddyAssets/
+
+# Misc
+*.swp
+*~
+.env
+
+# ローカル作業用ツール設定・ドラフト
+.claude/
+.wrangler/
+.xcodebuildmcp/
+GEMMA4_SETTING.md
+docs/LONG_CHAT_RELIABILITY.md
+.codex-artifacts/
+_docs_old/
+
+# スクショ・動画などの一時生成物
+tmp/

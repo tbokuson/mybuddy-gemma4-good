@@ -1,0 +1,13 @@
+{
+  "images" : [
+    {
+      "filename" : "body_fish_long.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

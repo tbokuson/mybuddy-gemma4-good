@@ -1,0 +1,3 @@
+"CFBundleDisplayName" = "MyBuddy AI Diary";
+"CFBundleName" = "MyBuddy";
+"NSPhotoLibraryUsageDescription" = "Used when attaching photos to conversations. Selected photos are processed only on device and are not sent externally.";

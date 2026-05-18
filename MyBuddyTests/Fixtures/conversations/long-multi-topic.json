@@ -1,0 +1,51 @@
+{
+  "id": "long-multi-topic",
+  "description": "22ターン・複数トピック (仕事・友人・健康) の長尺会話。チャンクサマリによる long モードを検証する。",
+  "memoryPreference": "balanced",
+  "buddyName": "こはく",
+  "messages": [
+    { "text": "朝ごはんにトーストとゆで卵を食べた", "offsetSeconds": 0 },
+    { "text": "出勤前にコンビニで水を買ったくらいで、特に予定はなかった", "offsetSeconds": 30 },
+    { "text": "午前中は田中さんとAPI設計の打ち合わせがあって、ちょっと長引いた", "offsetSeconds": 90 },
+    { "text": "認証まわりの仕様で意見が割れて、最後は妥協案でまとまった", "offsetSeconds": 150 },
+    { "text": "お昼は同僚の佐藤さんと会社の近くのラーメン屋に行った", "offsetSeconds": 220 },
+    { "text": "煮干し系のスープで、チャーシューが分厚くて食べごたえがあった", "offsetSeconds": 280 },
+    { "text": "午後はひたすらコードレビューとバグ修正をしてた", "offsetSeconds": 360 },
+    { "text": "本番で起きてたページング不具合を直せて、少しほっとした", "offsetSeconds": 420 },
+    { "text": "15時くらいにチームのSlackで新しい案件の話が流れてきた", "offsetSeconds": 480 },
+    { "text": "来月から決済まわりの改修にアサインされそうで、今から調べ物を始めた", "offsetSeconds": 540 },
+    { "text": "定時で上がれそうだったから、ジムに寄って30分だけ走ってきた", "offsetSeconds": 620 },
+    { "text": "最近運動不足だったから、走った後は足が重かったけど気分はスッキリした", "offsetSeconds": 680 },
+    { "text": "帰り道に大学時代の友達の山田から連絡がきてびっくりした", "offsetSeconds": 740 },
+    { "text": "今度の週末ご飯行こうって誘われて、渋谷で会うことになった", "offsetSeconds": 800 },
+    { "text": "夜ごはんは作るの面倒でスーパーで買ったお惣菜で済ませた", "offsetSeconds": 870 },
+    { "text": "鶏の唐揚げとひじきの煮物で、ちょっと野菜が足りない気がした", "offsetSeconds": 930 },
+    { "text": "お風呂のあと、録画してたドラマを2話まとめて見てしまった", "offsetSeconds": 1000 },
+    { "text": "ミステリー系で続きが気になる終わり方をして、明日も見ようと思った", "offsetSeconds": 1060 },
+    { "text": "寝る前にSNSを見てたら時間が溶けたのが今日の反省ポイント", "offsetSeconds": 1120 },
+    { "text": "明日はもう少し早く寝るのと、お昼にサラダを買うのを意識したい", "offsetSeconds": 1180 },
+    { "text": "全体として、仕事は進んだし体も動かせたし、悪くない一日だったと思う", "offsetSeconds": 1240 },
+    { "text": "山田と久しぶりに連絡取れたのが地味に嬉しかった", "offsetSeconds": 1300 }
+  ],
+  "notes": [
+    { "fact": "田中さんとAPI認証設計の打ち合わせをした", "emotion": "集中", "offsetSeconds": 120 },
+    { "fact": "佐藤さんと煮干しラーメンを食べた", "emotion": "嬉しい", "offsetSeconds": 260 },
+    { "fact": "本番のページング不具合を修正した", "emotion": "安心", "offsetSeconds": 440 },
+    { "fact": "決済改修の新案件にアサインされそう", "emotion": "集中", "offsetSeconds": 540 },
+    { "fact": "ジムで30分走った", "emotion": "清々しい", "offsetSeconds": 660 },
+    { "fact": "大学時代の友達の山田から連絡が来て週末渋谷で会う約束をした", "emotion": "嬉しい", "offsetSeconds": 780 },
+    { "fact": "SNSを見ていたら時間が溶けた", "emotion": "反省", "offsetSeconds": 1140 }
+  ],
+  "expectedProperNouns": ["田中", "佐藤", "山田", "渋谷", "API"],
+  "expectedFacts": ["ラーメン", "ジム", "ページング", "山田", "渋谷"],
+  "expectedEmotionCategories": ["嬉しい", "安心", "清々しい", "集中"],
+  "lengthBounds": {
+    "minCharacters": 180,
+    "maxCharacters": 1400
+  },
+  "thresholds": {
+    "nameCoverage": 0.3,
+    "factCoverage": 0.2,
+    "minEmotionMatches": 1
+  }
+}

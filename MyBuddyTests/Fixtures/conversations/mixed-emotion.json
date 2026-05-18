@@ -1,0 +1,75 @@
+{
+  "id": "mixed-emotion",
+  "description": "複雑な感情が混在する会話 (楽しい + 疲れた + 充実感)。会話全体から感情タグを推定するケース。ユーザー報告バグ『楽しかったけど疲れた』に『不安』タグが付く現象の回帰検証。",
+  "memoryPreference": "balanced",
+  "buddyName": "こはく",
+  "messages": [
+    {
+      "text": "今日は姪っ子の七五三でバタバタしてた",
+      "offsetSeconds": 0
+    },
+    {
+      "text": "朝から着物の着付けで、姪っ子が途中で飽きてぐずっちゃって大変だった",
+      "offsetSeconds": 45
+    },
+    {
+      "text": "でも神社で写真を撮るときはちゃんとポーズとってくれて、可愛い写真がいっぱい撮れた",
+      "offsetSeconds": 110
+    },
+    {
+      "text": "お参りの後は家族みんなで料亭に行って、懐石料理でお祝いした",
+      "offsetSeconds": 180
+    },
+    {
+      "text": "姪っ子がお刺身を初めて食べて、美味しいって言ってくれたのが嬉しかった",
+      "offsetSeconds": 240
+    },
+    {
+      "text": "夕方には姪っ子は疲れて爆睡。私もソファでうとうとしちゃった",
+      "offsetSeconds": 310
+    },
+    {
+      "text": "めちゃくちゃ疲れたけど、家族で集まれて本当に楽しかったし、やって良かったと思う",
+      "offsetSeconds": 380
+    }
+  ],
+  "notes": [
+    {
+      "fact": "姪っ子の七五三で着物の着付けに立ち会った",
+      "emotion": "楽しい",
+      "offsetSeconds": 60
+    },
+    {
+      "fact": "神社で姪っ子の記念写真を撮った",
+      "emotion": "嬉しい",
+      "offsetSeconds": 130
+    },
+    {
+      "fact": "家族で料亭の懐石料理を食べた",
+      "emotion": "幸せ",
+      "offsetSeconds": 200
+    },
+    {
+      "fact": "姪っ子が初めて刺身を食べた",
+      "emotion": "嬉しい",
+      "offsetSeconds": 260
+    },
+    {
+      "fact": "一日中動き回ってかなり疲れた",
+      "emotion": "疲れ",
+      "offsetSeconds": 340
+    }
+  ],
+  "expectedProperNouns": ["七五三", "神社", "料亭"],
+  "expectedFacts": ["七五三", "写真", "懐石", "刺身"],
+  "expectedEmotionCategories": ["嬉しい", "楽しい", "幸せ", "疲れ"],
+  "lengthBounds": {
+    "minCharacters": 150,
+    "maxCharacters": 900
+  },
+  "thresholds": {
+    "nameCoverage": 0.6,
+    "factCoverage": 0.6,
+    "minEmotionMatches": 1
+  }
+}

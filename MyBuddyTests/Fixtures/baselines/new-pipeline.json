@@ -1,0 +1,160 @@
+{
+  "long-multi-topic" : {
+    "accepted" : true,
+    "body" : "午前中は田中さんとAPI設計の打ち合わせがあった。認証まわりの仕様で意見が割れてしまい、最後は妥協案でまとまった。その後、朝ごはんにトーストとゆで卵を食べた。出勤前にコンビニで水を買った。\n\nお昼は同僚の佐藤さんと会社の近くのラーメン屋に行った。煮干し系のスープで、チャーシューが分厚くて食べごたえがあった。\n\n午後はひたすらコードレビューとバグ修正をしてた。15時くらいにチームのSlackで新しい案件の話が流れてきた。本番で起きていたページング不具合を直せて、少しほっとした。\n\n帰り道に大学時代の友達の山田から連絡がきてびっくりした。",
+    "emotionTags" : [
+      "妥協",
+      "ほっとした",
+      "驚いた"
+    ],
+    "fixtureId" : "long-multi-topic",
+    "metrics" : {
+      "bodyLength" : 270,
+      "emotionMatchCount" : 1,
+      "factCoverage" : 0.6,
+      "lengthOK" : true,
+      "matchedEmotionCategories" : [
+        "安心"
+      ],
+      "missingFacts" : [
+        "ジム",
+        "渋谷"
+      ],
+      "missingProperNouns" : [
+        "渋谷"
+      ],
+      "nameCoverage" : 0.8
+    },
+    "nameCoverage" : 0.42857142857142855,
+    "recordedAt" : "2026-04-12T03:22:24Z",
+    "title" : "API設計とほっとした瞬間",
+    "tomorrowNote" : ""
+  },
+  "mixed-emotion" : {
+    "accepted" : true,
+    "body" : "今日は姪っ子の七五三のお祝いで、本当にバタバタした一日だった。朝から着物の着付けを始めたのだが、姪っ子が途中で飽きてぐずってしまい、着付けが大変だった。お参りの後は、家族みんなで料亭へ行き、懐石料理でお祝いした。その席で、姪っ子が初めてお刺身を食べて、「美味しい」と幸せそうな声を上げてくれたのが印象的だ。写真撮影の際も、神社でポーズを取るのを手伝ってくれたので、可愛い写真がたくさん撮れた。夕方には、着付けや祝いの席で頑張った姪っ子が、疲れ果てて爆睡してくれた。家族みんなで集まれて、本当に楽しかった。",
+    "emotionTags" : [
+      "楽しい",
+      "幸せ",
+      "疲れた"
+    ],
+    "fixtureId" : "mixed-emotion",
+    "metrics" : {
+      "bodyLength" : 252,
+      "emotionMatchCount" : 4,
+      "factCoverage" : 1,
+      "lengthOK" : true,
+      "matchedEmotionCategories" : [
+        "嬉しい",
+        "楽しい",
+        "幸せ",
+        "疲れ"
+      ],
+      "missingFacts" : [
+
+      ],
+      "missingProperNouns" : [
+
+      ],
+      "nameCoverage" : 1
+    },
+    "nameCoverage" : 1,
+    "recordedAt" : "2026-04-12T03:22:31Z",
+    "title" : "姪っ子の七五三のお祝い",
+    "tomorrowNote" : ""
+  },
+  "name-heavy" : {
+    "accepted" : true,
+    "body" : "今日は新宿のユニクロ本店でヒートテックとダウンを買った。その後、紀伊國屋書店で村上春樹の新刊を立ち読みしてきた。お昼には伊勢丹地下のデリで買ったサンドイッチを食べた。午後は渋谷のBunkamuraで展覧会を見た。夕方に表参道のブルーボトルでコーヒーを飲んで一息ついた。そして夜は友達の美咲と恵比寿でご飯を済ませた。",
+    "emotionTags" : [
+      "満足",
+      "ほっとした",
+      "穏やか"
+    ],
+    "fixtureId" : "name-heavy",
+    "metrics" : {
+      "bodyLength" : 157,
+      "emotionMatchCount" : 2,
+      "factCoverage" : 0.6,
+      "lengthOK" : true,
+      "matchedEmotionCategories" : [
+        "嬉しい",
+        "穏やか"
+      ],
+      "missingFacts" : [
+        "モネ",
+        "ガパオ"
+      ],
+      "missingProperNouns" : [
+        "モネ"
+      ],
+      "nameCoverage" : 0.9090909090909091
+    },
+    "nameCoverage" : 0.8333333333333334,
+    "recordedAt" : "2026-04-12T03:22:38Z",
+    "title" : "新宿・表参道でのひととき",
+    "tomorrowNote" : ""
+  },
+  "normal-typical" : {
+    "accepted" : true,
+    "body" : "私は今日、朝から横浜のジョイポリスに行ってきた。お昼には中華街で小籠包を食べた。久しぶりに一日中遊んだ感じで、とても満足している。アトラクションは結構混んでいたが、ハーフパイプのやつが一番楽しかった。皮が薄くて熱々のスープが出てきてびっくりした。そのあと、山下公園を少し散歩してのんびりした。帰りの電車の中で寝落ちしてしまい、気づいたら最寄駅にいた。足はかなり疲れたが、この一日を過ごせてよかった。",
+    "emotionTags" : [
+      "満足",
+      "驚き",
+      "疲れた"
+    ],
+    "fixtureId" : "normal-typical",
+    "metrics" : {
+      "bodyLength" : 199,
+      "emotionMatchCount" : 3,
+      "factCoverage" : 1,
+      "lengthOK" : true,
+      "matchedEmotionCategories" : [
+        "嬉しい",
+        "穏やか",
+        "疲れ"
+      ],
+      "missingFacts" : [
+
+      ],
+      "missingProperNouns" : [
+
+      ],
+      "nameCoverage" : 1
+    },
+    "nameCoverage" : 1,
+    "recordedAt" : "2026-04-12T03:22:44Z",
+    "title" : "横浜での一日満喫",
+    "tomorrowNote" : ""
+  },
+  "short-minimal" : {
+    "accepted" : true,
+    "body" : "今日は近所のパン屋さんでクロワッサンを買った。焼きたてで香りがすごく良くて、朝からちょっと得した気分だった。",
+    "emotionTags" : [
+      "満足",
+      "得した気分"
+    ],
+    "fixtureId" : "short-minimal",
+    "metrics" : {
+      "bodyLength" : 54,
+      "emotionMatchCount" : 2,
+      "factCoverage" : 1,
+      "lengthOK" : true,
+      "matchedEmotionCategories" : [
+        "嬉しい",
+        "穏やか"
+      ],
+      "missingFacts" : [
+
+      ],
+      "missingProperNouns" : [
+
+      ],
+      "nameCoverage" : 1
+    },
+    "nameCoverage" : 1,
+    "recordedAt" : "2026-04-12T03:22:46Z",
+    "title" : "焼きたてクロワッサン",
+    "tomorrowNote" : ""
+  }
+}

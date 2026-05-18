@@ -1,0 +1,40 @@
+{
+  "id": "short-minimal",
+  "description": "3ターン以下の極端に短い会話。Rank Stage をスキップして全事実をそのまま使うモードを検証する。",
+  "memoryPreference": "balanced",
+  "buddyName": "こはく",
+  "messages": [
+    {
+      "text": "今日は近所のパン屋さんでクロワッサンを買った",
+      "offsetSeconds": 0
+    },
+    {
+      "text": "焼きたてで香りがすごく良くて、朝からちょっと得した気分だった",
+      "offsetSeconds": 15
+    }
+  ],
+  "notes": [
+    {
+      "fact": "近所のパン屋でクロワッサンを買った",
+      "emotion": "嬉しい",
+      "offsetSeconds": 10
+    },
+    {
+      "fact": "焼きたての香りが良かった",
+      "emotion": "嬉しい",
+      "offsetSeconds": 20
+    }
+  ],
+  "expectedProperNouns": ["クロワッサン", "パン屋"],
+  "expectedFacts": ["クロワッサン", "焼きたて"],
+  "expectedEmotionCategories": ["嬉しい", "楽しい", "穏やか"],
+  "lengthBounds": {
+    "minCharacters": 40,
+    "maxCharacters": 400
+  },
+  "thresholds": {
+    "nameCoverage": 0.5,
+    "factCoverage": 0.5,
+    "minEmotionMatches": 1
+  }
+}

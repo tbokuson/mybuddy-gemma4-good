@@ -1,0 +1,66 @@
+{
+  "id": "normal-typical",
+  "description": "8ターン前後の標準的な会話。Extract→Rank→Compose→Annotate→Verify の全段階を通す基本ケース。",
+  "memoryPreference": "balanced",
+  "buddyName": "こはく",
+  "messages": [
+    {
+      "text": "今日は朝から横浜のジョイポリスに行ってきた",
+      "offsetSeconds": 0
+    },
+    {
+      "text": "アトラクションは結構混んでたけど、ハーフパイプのやつが一番楽しかった",
+      "offsetSeconds": 30
+    },
+    {
+      "text": "お昼は中華街で小籠包を食べた。皮が薄くて熱々のスープが出てきてびっくりした",
+      "offsetSeconds": 90
+    },
+    {
+      "text": "そのあと山下公園を少し散歩してのんびりした",
+      "offsetSeconds": 160
+    },
+    {
+      "text": "帰りの電車で寝落ちしちゃって、気づいたら最寄駅だった",
+      "offsetSeconds": 220
+    },
+    {
+      "text": "足はかなり疲れたけど、久しぶりに一日中遊んだ感じで満足してる",
+      "offsetSeconds": 280
+    }
+  ],
+  "notes": [
+    {
+      "fact": "横浜のジョイポリスでハーフパイプのアトラクションを楽しんだ",
+      "emotion": "楽しい",
+      "offsetSeconds": 60
+    },
+    {
+      "fact": "中華街で小籠包を食べた",
+      "emotion": "嬉しい",
+      "offsetSeconds": 120
+    },
+    {
+      "fact": "山下公園を散歩した",
+      "emotion": "穏やか",
+      "offsetSeconds": 180
+    },
+    {
+      "fact": "帰りの電車で寝落ちするほど疲れた",
+      "emotion": "疲れ",
+      "offsetSeconds": 240
+    }
+  ],
+  "expectedProperNouns": ["横浜", "ジョイポリス", "中華街", "小籠包", "山下公園"],
+  "expectedFacts": ["ジョイポリス", "小籠包", "山下公園", "電車"],
+  "expectedEmotionCategories": ["楽しい", "嬉しい", "穏やか", "疲れ"],
+  "lengthBounds": {
+    "minCharacters": 120,
+    "maxCharacters": 800
+  },
+  "thresholds": {
+    "nameCoverage": 0.6,
+    "factCoverage": 0.6,
+    "minEmotionMatches": 2
+  }
+}

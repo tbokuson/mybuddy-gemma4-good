@@ -1,0 +1,71 @@
+{
+  "id": "name-heavy",
+  "description": "固有名詞 (人名・地名・店名・作品名) が多めの会話。Stage 5 の nameCoverage 品質ガードが正しく働くことを検証する。",
+  "memoryPreference": "balanced",
+  "buddyName": "こはく",
+  "messages": [
+    {
+      "text": "今日は新宿のユニクロ本店でヒートテックとダウンを買った",
+      "offsetSeconds": 0
+    },
+    {
+      "text": "そのあと紀伊國屋書店で村上春樹の新刊を立ち読みしてきた",
+      "offsetSeconds": 60
+    },
+    {
+      "text": "お昼は伊勢丹地下のデリで買ったサンドイッチを食べた",
+      "offsetSeconds": 140
+    },
+    {
+      "text": "午後は渋谷のBunkamuraで展覧会を見た。モネの睡蓮がやっぱり良かった",
+      "offsetSeconds": 220
+    },
+    {
+      "text": "夕方に表参道のブルーボトルでコーヒーを飲んで一息ついた",
+      "offsetSeconds": 300
+    },
+    {
+      "text": "夜は友達の美咲と恵比寿でご飯。タイ料理のガパオが美味しかった",
+      "offsetSeconds": 380
+    }
+  ],
+  "notes": [
+    {
+      "fact": "新宿のユニクロ本店でヒートテックとダウンを買った",
+      "emotion": "嬉しい",
+      "offsetSeconds": 30
+    },
+    {
+      "fact": "紀伊國屋書店で村上春樹の新刊を立ち読みした",
+      "emotion": "楽しい",
+      "offsetSeconds": 90
+    },
+    {
+      "fact": "渋谷のBunkamuraでモネの睡蓮を見た",
+      "emotion": "感動",
+      "offsetSeconds": 260
+    },
+    {
+      "fact": "表参道のブルーボトルでコーヒーを飲んだ",
+      "emotion": "穏やか",
+      "offsetSeconds": 330
+    },
+    {
+      "fact": "恵比寿で美咲とタイ料理のガパオを食べた",
+      "emotion": "嬉しい",
+      "offsetSeconds": 420
+    }
+  ],
+  "expectedProperNouns": ["新宿", "ユニクロ", "紀伊國屋", "村上春樹", "渋谷", "Bunkamura", "モネ", "表参道", "ブルーボトル", "美咲", "恵比寿"],
+  "expectedFacts": ["ユニクロ", "村上春樹", "モネ", "ブルーボトル", "ガパオ"],
+  "expectedEmotionCategories": ["嬉しい", "楽しい", "穏やか", "感動"],
+  "lengthBounds": {
+    "minCharacters": 140,
+    "maxCharacters": 900
+  },
+  "thresholds": {
+    "nameCoverage": 0.7,
+    "factCoverage": 0.6,
+    "minEmotionMatches": 2
+  }
+}
